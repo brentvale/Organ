@@ -17,7 +17,6 @@ var Key = React.createClass({
       this.setState({pressed:false});
       this.note.stop();
     }
-    // this.state.pressed ? this.setState({pressed: false}) : this.setState({pressed: true})
   },
   render: function(){
     var toDisplay = this.state.pressed ? <div className="piano-key-pressed"></div> : <div className="piano-key"></div>

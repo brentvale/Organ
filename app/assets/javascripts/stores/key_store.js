@@ -1,4 +1,4 @@
-(function(root){
+(function (root){
   var CHANGE_EVENT = "change";
   var _pressedKeys = [];
   
@@ -6,14 +6,14 @@
     if(!KeyStore.find(key)){
       _pressedKeys.push(key);
     }
-  }
+  };
   
   var removeKey = function(key){
     var keyIdx = _pressedKeys.indexOf(key);
     if(KeyStore.find(key)){
       _pressedKeys.splice(keyIdx, 1);
     }
-  }
+  };
   
   root.KeyStore = $.extend({}, EventEmitter.prototype, {
     addChangeListener: function(callback){
@@ -23,10 +23,7 @@
       this.removeListener(CHANGE_EVENT, callback);
     },
     pressedKeys: function(){
-      _pressedKeys.forEach(function(key){
-        console.log(key);
-      });
-      
+      return _pressedKeys.slice(0);
     },
     find: function(noteInteger){
       for(var i = 0; i < _pressedKeys.length; i ++){

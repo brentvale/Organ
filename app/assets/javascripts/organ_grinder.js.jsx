@@ -14,7 +14,7 @@ var App = React.createClass({
 
 var routes = (
   <Route name="app" path="/" handler={App}>
-    <ReactRouter.DefaultRoute handler={KeyBoard}/>
+    <ReactRouter.DefaultRoute handler={MusicCenter}/>
   </Route>
 );
 

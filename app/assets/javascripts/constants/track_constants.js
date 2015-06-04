@@ -1,0 +1,4 @@
+TrackConstants = {
+  SAVE_TRACK: "SAVE_TRACK",
+  TRACKS_FETCHED: "TRACKS_FETCHED"
+}
