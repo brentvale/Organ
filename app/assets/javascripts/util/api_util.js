@@ -15,7 +15,7 @@ ApiUtil = {
     })
   },
   saveTrack: function(data){
-    debugger
+    
     $.ajax({
       type:"POST",
       url: "/api/tracks",

@@ -12,7 +12,6 @@ var JukeBox = React.createClass({
     this.setState({tracks: TrackStore.all()});
   },
   render: function(){
-    debugger
     return(
       <ul>
         {

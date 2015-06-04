@@ -7,7 +7,6 @@ var TrackPlayer = React.createClass({
       this.setState({displayControls:true})
   },
   playTrack: function() {
-    debugger
     this.props.track.play()
   },
   stopTrack: function() {
